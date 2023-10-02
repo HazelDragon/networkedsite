@@ -1,0 +1,231 @@
+@import url("https://use.typekit.net/qlo8nrd.css");
+@import url("https://use.typekit.net/rrw2brz.css");
+
+
+
+
+.link{
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    justify-self: right;
+    justify-content: space-evenly;
+    font-size: 20pt;
+    transform:scaleY(0.8);
+}
+
+.link a {
+font-family: "hobeaux-rococeaux-background", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.link a:hover {
+    text-shadow: 10pt;
+    color: maroon;
+   transform: scaleY(1.5);
+}
+
+.link a:active {
+    color: bisque;
+    transform: scaleY(0.5);
+}
+
+
+.text{
+    font-family: "fenwick", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    font-size: 12pt;
+}
+
+.back{
+    font-family: "hobeaux-rococeaux-background", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+}
+
+.back a:hover {
+transform: scaleY(3);
+}
+
+
+
+.net1con{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.net1images img {
+    flex-direction: column;
+    max-width: 50%;
+    min-width: 30%;
+
+}
+
+.net1images img:hover {
+    transform:scale(5);
+}
+
+.net1images img:active {
+    transform:scaleY(7);
+    transform: scaleX(0.5);
+}
+
+
+
+
+/* pag2 */
+.net2con{
+    display: flex;
+}
+
+
+.net2images img {
+    flex-direction: row;
+    max-width: 10%;
+    min-width: 20%;
+}
+
+.net2images:hover {
+    max-width: 50%;
+    transform: scaleX(0.5);
+    translate: (80%,20%);
+    transform: scaleY(0.85);
+}
+
+.net2images img:active{
+    transform: scaleX(6);
+    translate: (80%,20%);
+}
+
+
+
+.net3images{
+display: flex;
+flex-direction: column;
+max-width: 50%;
+}
+
+.net3images:hover {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+}
+
+.net3images:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 50%;
+}
+
+
+
+.net4images{
+    display: flex;
+}
+
+.net4images:hover{
+filter: grayscale(20%);
+max-width: 40%;
+}
+
+.net4images img:active{
+transform: scaleX(3);
+}
+
+
+
+
+
+
+
+@keyframes vfhover 
+{
+0%{transform: scaleX(1) scaleY(1);}
+
+100%{transform: scaleX(0.25) scaleY(3);}
+}
+
+@keyframes vfclick 
+{
+0%{filter: grayscale(0%);}
+100%{filter: grayscale(100%)}
+}
+
+
+.net5images{
+    display: flex;
+    max-width: 50%;
+    justify-content: space-between;
+}
+
+.net5images:hover{
+    animation: vfhover 2s ease-in-out;
+}
+
+.net5images:active {
+    animation: vfclick 2s ease-in-out;
+    max-width: 70%;
+}
+
+
+
+@keyframes hup {
+    0%, 100%{transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+
+@keyframes clickup {
+    0%,100%{filter: grayscale(0%);}
+50%{filter: grayscale(100%)}
+}
+
+.net4images {
+    display: flex;
+    display: table-column;
+}
+
+.net4images:hover {
+    animation:hup 3s ease-in-out;
+}
+
+.netimages:active {
+    animation: clickup 2s ease-in-out;
+}
+
+
+@keyframes upclick {
+    0%,100%{filter: grayscale(100%);}
+50%{filter: grayscale(50%)}
+}
+
+
+/* page 6*/ 
+.net6con {
+    display: flex;
+}
+
+.net6images img {
+    flex-direction: row;
+    min-width: 20%;
+    max-width: 30%;
+}
+
+.net6images:hover {
+    opacity: 30%;
+    flex-direction: column;
+    max-width: 10%;
+    transform: scale(0.25);
+}
+
+.net6images:active {
+    animation: upclick 2s ease-in-out;
+}
+
